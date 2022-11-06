@@ -1,0 +1,140 @@
+.header {
+  padding: 4px 20px;
+  background: #151825;
+  border-color: #1b1e2e;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+    }
+
+    .separator {
+      height: 38px;
+      width: 2px;
+      border-right: 1px solid #303552;
+      margin: 0 20px 0 16px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #aaaab3;
+      cursor: pointer;
+      flex: 1 1 0;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      margin: 0 4px;
+      transition: all 0.3s;
+
+      span {
+        display: block;
+        font-family: Roboto, sans-serif;
+        font-size: 0.65rem;
+        color: #999;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      i {
+        color: #41b883;
+        padding: 10px;
+        font-size: 24px;
+      }
+
+      &:hover {
+        background: #1d2031;
+      }
+    }
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+
+    &__button {
+      border-color: #41b883;
+      background: #41b883;
+      padding: 8px 22px;
+      height: 38px;
+      line-height: 1.1;
+      font-size: 0.95rem;
+      font-family: Roboto, sans-serif;
+      transition: all 0.3s;
+      margin-right: 10px;
+      display: flex;
+      border: none;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 4px;
+      gap: 8px;
+
+      span {
+        color: #fff;
+      }
+
+      i {
+        color: #fff;
+        font-size: 0.95rem;
+      }
+    }
+
+    &__google {
+      background: #2c314b;
+      border-color: #303552;
+      color: #aaaab3;
+      padding: 8px 22px;
+      height: 38px;
+      line-height: 1.1;
+      font-size: 0.95rem;
+      font-family: Roboto, sans-serif;
+      transition: all 0.3s;
+      display: flex;
+      border: none;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 4px;
+      gap: 8px;
+
+      span {
+        color: #fff;
+      }
+
+      i {
+        background: conic-gradient(
+            from -45deg,
+            #ea4335 110deg,
+            #4285f4 90deg 180deg,
+            #34a853 180deg 270deg,
+            #fbbc05 270deg
+          )
+          73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

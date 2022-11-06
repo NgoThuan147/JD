@@ -1,0 +1,28 @@
+.our-partners {
+  h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: Montserrat, sans-serif;
+    color: #46d591 !important;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      height: 90px;
+      color: #fff;
+      padding: 25px;
+      margin: 5px;
+      filter: grayscale(100%);
+      max-width: 190px !important;
+      min-width: 210px !important;
+      max-height: 110px;
+      width: 210px !important;
+    }
+  }
+}

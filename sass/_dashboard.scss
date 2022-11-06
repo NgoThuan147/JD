@@ -1,0 +1,112 @@
+.dashboard {
+
+  &__info {
+    position: relative;
+    padding: 20px;
+    height: 340px;
+    background: #24293e !important;
+    border: 0.1px solid #2d385c;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    &__money {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      width: 70%;
+
+      .container__image2 {
+        padding: 10px;
+        height: 140px;
+        width: 50%;
+        margin-left: 35px;
+      }
+
+      .text {
+        color: #fff;
+        margin-left: 90px;
+        width: 58%;
+
+        h1 {
+          font-size: 16px;
+          color: #aaaab3;
+        }
+
+        p {
+          font-family: Roboto, sans-serif;
+          font-weight: 300;
+          color: #a2a5b9;
+          font-size: 16px;
+        }
+
+        .button {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+          a {
+            border: 1px solid #41b883 !important;
+            color: #41b883;
+            text-decoration: none;
+            padding: 8px 22px;
+            height: 38px;
+            line-height: 1.1;
+            font-size: 0.95rem;
+            font-family: Roboto, sans-serif;
+            transition: all 0.3s;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              background: #41b883 !important;
+              border-color: #41b883 !important;
+              color: #2c314b !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__statistical {
+    display: flex;
+    padding: 20px;
+    background: #24293e !important;
+    border: 0.1px solid #2d385c;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+
+    .item {
+      width: 25%;
+      text-align: center;
+
+      i {
+        color: #41b883 !important;
+        font-size: 35px !important;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin: 0;
+      }
+
+      span {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.95rem;
+      }
+    }
+
+    .item + .item {
+      border-left: 1px solid #303552;
+    }
+  }
+}

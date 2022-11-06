@@ -1,0 +1,27 @@
+@import "./header";
+@import "./carousel-rewards";
+@import "./dashboard";
+@import "./howToStart";
+@import "./faq";
+@import "./why-us";
+@import "./our-partners";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #1d2031;
+  border-color: #2c314b;
+  color: #aaaab3;
+}
+
+.navbar {
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+.content {
+  margin-top: 40px;
+  margin-right: 320px;
+  margin-left: 80px;
+  transition: margin 0.5s;
+}
