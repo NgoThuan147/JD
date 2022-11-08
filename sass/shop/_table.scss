@@ -1,0 +1,106 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  //   background-color: #2c314b;
+  color: #363636;
+}
+
+.table.is-fullwidth {
+  width: 100%;
+}
+
+.is-dark .table {
+  background: #24293e;
+  border-color: #303552;
+}
+
+.table thead {
+  background-color: transparent;
+}
+
+.table th {
+  border: 1px solid #303552;
+  border-width: 0 0 1px;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+}
+
+.table th {
+  font-family: Montserrat, sans-serif;
+}
+
+.table thead td,
+.table thead th {
+  border-width: 0 0 2px;
+  color: #aaaab3;
+}
+
+.table th:not([align]) {
+  text-align: inherit;
+}
+
+.is-dark .table th {
+  border-color: #303552;
+}
+
+.is-dark .table th {
+  color: #aaaab3;
+}
+
+.is-justify-content-flex-end {
+  justify-content: flex-end !important;
+}
+
+.is-flex {
+  display: flex !important;
+}
+
+.is-dark .dark-inverted,
+.is-dark .title {
+  color: #aaaab3 !important;
+}
+
+.table tbody {
+  background-color: transparent;
+}
+
+.is-dark .table tbody td:first-child {
+  color: #aaaab3;
+}
+
+.table tbody tr:last-child td,
+.table tbody tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.is-dark .table tbody td,
+.is-dark .table tbody th {
+  border-color: #303552;
+}
+
+.table tbody td.is-media {
+  width: 40px;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+.is-dark .table td {
+  color: #aaaab3;
+}
+
+.is-dark .table tbody td:first-child {
+  color: #aaaab3;
+}
+
+.link-link {
+  color: #01d676;
+}
+
+.table tbody tr td {
+    color: #aaaab3 !important;
+}

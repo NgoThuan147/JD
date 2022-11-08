@@ -1,0 +1,239 @@
+.message-side {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #24293e !important;
+  z-index: 35;
+  transition: 0.5s ease;
+  width: 285px;
+
+  .general {
+    width: 100%;
+    margin-top: 500px;
+    padding: 8px;
+
+    &__content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__user {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        i {
+          font-size: 14px;
+          color: #46d591 !important;
+          font-weight: 900;
+        }
+
+        span {
+          font-size: 12px;
+          color: #46d591 !important;
+          font-weight: 900;
+          // margin-left: 10px;
+        }
+      }
+
+      button {
+        padding: 8px 22px;
+        line-height: 1.1;
+        font-size: 0.95rem;
+        font-family: Roboto, sans-serif;
+        transition: all 0.3s;
+        height: 25px !important;
+        font-weight: 700;
+        border-color: #41b883;
+        background: #41b883;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    &__icon {
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+
+      a {
+        text-decoration: none;
+
+        i {
+          font-weight: 500;
+          cursor: pointer;
+          color: #a9afcd !important;
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+.chat-window {
+  width: 290px;
+  position: fixed;
+  bottom: 230px;
+  margin-bottom: 35px;
+  direction: rtl;
+  margin-top: 55px;
+}
+
+.messages {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: calc(100vh - 350px);
+}
+
+.single {
+  padding: 10px;
+  overflow: hidden;
+  max-height: 251px;
+  background: #24293e !important;
+  border-bottom: 0.1px solid #2a3455;
+  direction: ltr;
+}
+
+.created-at {
+  display: block;
+  color: #495c97;
+  float: right;
+  font-size: 12px;
+  margin-bottom: -2px;
+}
+
+.avatar {
+  margin-right: 8px;
+  float: left;
+}
+
+.v-avatar {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.v-avatar.is-xsmall {
+  max-width: 18px;
+  min-width: 18px;
+  max-height: 18px;
+}
+
+.v-avatar.is-xsmall .avatar {
+  max-width: 18px;
+  min-width: 18px;
+  max-height: 18px;
+}
+
+.is-dark .v-avatar .avatar {
+  border-color: #24293e;
+}
+
+.v-avatar.is-xsmall .avatar.is-squared {
+  border-radius: 4px !important;
+}
+
+.name {
+  color: #00fc7c;
+  font-family: fira code, monospace;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.message2 {
+  overflow-wrap: break-word;
+  font-size: 13px;
+  padding: 5px;
+  font-family: fira code, monospace;
+  color: #6174b2;
+}
+
+.v-avatar .avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.v-avatar img {
+  display: block;
+  border-radius: 9999px;
+}
+
+.avatar {
+  margin-right: 8px;
+  float: left;
+}
+
+.messages::-webkit-scrollbar {
+  background: #13b167;
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #394774 !important;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00fc7c;
+  border-radius: 7px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #2b3659 !important;
+  border-left: 1px solid #2b3659 !important;
+}
+
+.send {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+form {
+  margin: 20px 0 80px;
+}
+
+textarea {
+  overflow: hidden;
+  height: 120px;
+  bottom: 0;
+  right: 0;
+  caret-color: #fff;
+  resize: none;
+  cursor: text;
+  left: 0;
+  width: 100%;
+  font-size: 15px;
+  color: #6174b2;
+  position: absolute;
+  background: #171820 !important;
+  font-family: monospace;
+  border: 0.1px solid #2a3455;
+}
+
+.blinker {
+  margin-bottom: 60px;
+  border: 3px;
+  outline: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+}
