@@ -1,0 +1,72 @@
+.earn {
+  margin-top: 60px;
+  &__list {
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    background-color: #2c314b;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 50px;
+
+    background: #24293e;
+    border-color: #303552;
+
+    &__title {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+
+      i {
+        color: #01d676;
+        font-size: 1.5rem;
+      }
+      span {
+        position: relative;
+        padding-left: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #6973a8 !important;
+      }
+    }
+  }
+}
+
+.quick-stats .quick-stats-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.offer-card {
+  position: relative;
+  transition: transform 0.2s;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  height: 140px;
+  cursor: pointer;
+  width: 240px;
+  background: #283252;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: #0000001f 0 -23px 40px 0 inset, #00000026 0 -36px 30px 0 inset,
+    #0000001a 0 -79px 40px 0 inset, #0000000f 0 2px 1px, #00000017 0 4px 2px,
+    #00000017 0 8px 4px, #00000017 0 16px 8px, #00000017 0 32px 16px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.center-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 130px;
+}

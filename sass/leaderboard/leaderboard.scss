@@ -1,0 +1,136 @@
+.leaderboard {
+  &__tabs {
+    .nav-tabs {
+      border: none;
+
+      li {
+        button {
+          background: #2c314b;
+          border-color: #303552;
+          color: #aaaab3;
+          font-size: 14px;
+
+          &:hover {
+            border-color: #41b883;
+          }
+        }
+      }
+    }
+
+    .nav-link.active {
+      border-color: #41b883;
+      background: #41b883;
+      color: #fff;
+    }
+  }
+
+  &__title {
+    padding: 30px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 20px;
+
+    h1 {
+      margin-bottom: 15px;
+      text-shadow: #00fc7c 0 0 0;
+      color: #00fc7c;
+      font-size: 45px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-top: 15px;
+      font-family: Montserrat, sans-serif;
+      color: #46d59170 !important;
+      font-weight: 200;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 4px;
+      background: linear-gradient(120deg, #00fc7c, #303552, #00fc7c);
+      background-size: 300% 300%;
+      clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) calc(100% - 3px),
+        3px calc(100% - 3px),
+        3px 100%,
+        100% 100%,
+        100% 0%,
+        0% 0%
+      );
+    }
+  }
+}
+
+.in::after {
+  animation: frame-enter-37165ad4 1s forwards ease-in-out reverse,
+    gradient-animation-37165ad4 4s ease-in-out infinite;
+}
+
+.podium-box {
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+
+  .step-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-0 {
+    padding: 0 !important;
+  }
+
+  .m-0 {
+    margin: 0 !important;
+  }
+
+  .v-avatar {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .v-avatar.is-big {
+    max-width: 80px;
+    min-width: 80px;
+  }
+
+  .v-avatar.is-big .avatar {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    border-color: #24293e;
+    border-radius: 18px !important;
+    object-fit: cover;
+  }
+
+  .podium-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: Montserrat, sans-serif;
+    color: #46d591 !important;
+  }
+
+  .podium-points[data-v-37165ad4] {
+    color: #a2a5b9;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 800;
+  }
+}
