@@ -506,8 +506,9 @@
   width: 285px; }
   .message-side .general {
     width: 100%;
-    margin-top: 500px;
-    padding: 8px; }
+    padding: 8px;
+    position: absolute;
+    bottom: 9%; }
     .message-side .general__content {
       width: 100%;
       display: flex;
