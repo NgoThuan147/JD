@@ -222,25 +222,58 @@
                     <p>Choose an amount</p>
                     <div class="select">
                         <div class="item">
-                            <input type="radio" name="money" />
+                            <input type="radio" name="money" onclick="handleClickSelect(25)" />
                             <span>$25</span>
                         </div>
                         <div class="item">
-                            <input type="radio" name="money" />
+                            <input type="radio" name="money" onclick="handleClickSelect(50)" />
                             <span>$50</span>
                         </div>
                         <div class="item">
-                            <input type="radio" name="money" />
+                            <input type="radio" name="money" onclick="handleClickSelect(70)" />
                             <span>$70</span>
                         </div>
                         <div class="item">
-                            <input type="radio" name="money" />
+                            <input type="radio" name="money" onclick="handleClickSelect(95)" />
                             <span>$95</span>
                         </div>
                     </div>
                 </div>
                 <div class="pay__content1__right">
                     <p>Enter your own</p>
+                    <div class="input">
+                        <i class='bx bx-dollar'></i>
+                        <input type="number" placeholder="Coming soon..." disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="pay__content2">
+                <div class="pay__content2__left">
+                    <p>Send to:</p>
+                    <div class="input">
+                        <i class='bx bxl-bitcoin'></i>
+                        <input type="text" placeholder="Enter your bitcoin wallet address here..." disabled>
+                    </div>
+                    <button disabled>
+                        <i class='bx bx-save'></i>
+                        <span>Confirm Wallet Address</span>
+                    </button>
+                </div>
+                <div class="pay__content2__right">
+                    <p>Payout preview</p>
+                    <div class="total">
+                        <div class="item">
+                            <span>Amount:</span>
+                            <p id="totalUSD">-</p>
+                        </div>
+                        <div class="item">
+                            <span>Cost:</span>
+                            <div><i class='bx bxs-data'></i>
+                                <p id="totalCoin">-</p>
+                            </div>
+                        </div>
+                        <button><span>Request Payout</span></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -517,6 +550,31 @@
             integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const formatNumber = (value) => {
+                const phoneNumber = value + '';
+                const list = phoneNumber.split('.');
+                const prefix = list[0].charAt(0) === '-' ? '-' : '';
+                let num = prefix ? list[0].slice(1) : list[0];
+                let result = '';
+                while (num.length > 3) {
+                    result = `.${num.slice(-3)}${result}`;
+                    num = num.slice(0, num.length - 3);
+                }
+                if (num) {
+                    result = num + result;
+                }
+                return `${prefix}${result}${list[1] ? `.${list[1]}` : ''}`;
+            };
+            const elementTotalUSD = document.querySelector('#totalUSD');
+            const elementTotalCoin = document.querySelector('#totalCoin');
+            console.log(elementTotalUSD, elementTotalCoin)
+            const handleClickSelect = (dollas) => {
+                elementTotalUSD.innerHTML = `${dollas} USD`
+                elementTotalCoin.innerHTML = `${formatNumber(dollas * 1000)}`
+            }
+        </script>
 </body>
 
 
