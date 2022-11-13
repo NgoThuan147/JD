@@ -1,0 +1,104 @@
+.pay {
+  width: 100%;
+  background: rgb(36, 41, 62);
+  border: 1px solid;
+  transition: all 0.3s ease 0s;
+  border-radius: 6px;
+  border-color: rgb(48, 53, 82);
+
+  &__title {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(48, 53, 82);
+
+    i {
+      font-size: 90px;
+      color: rgb(247, 147, 26);
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 22px;
+      background: #2c314b;
+      border: 1px solid;
+      border-color: #303552;
+      color: #aaaab3;
+      border-radius: 6px;
+
+      i {
+        font-size: 16px;
+        color: #aaaab3;
+      }
+    }
+  }
+
+  &__content1 {
+    padding: 20px;
+    display: flex;
+
+    &__left {
+      width: 60%;
+
+      p {
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: rgb(170, 170, 179);
+        margin-bottom: 20px;
+      }
+
+      .select {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .item {
+          position: relative;
+
+          input {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 80px;
+            border: 1px solid;
+            border-radius: 8px;
+            font-family: Roboto, sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            transition: all 0.3s ease 0s;
+            background: rgb(29, 32, 49);
+            border-color: rgb(48, 53, 82);
+            color: rgb(170, 170, 179);
+          }
+
+          input:checked + span {
+            border-color: rgb(65, 184, 131);
+            background: rgb(65, 184, 131);
+            color: rgb(252, 252, 252);
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 40%;
+    }
+  }
+}
