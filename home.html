@@ -94,7 +94,7 @@
                 </a>
             </div>
             <div class="header__login">
-                <button class="header__login__button">
+                <button class="header__login__button" data-bs-toggle="modal" data-bs-target="#modalLogin">
                     <i class='bx bxs-log-in'></i>
                     <span>Log in</span>
                 </button>
@@ -202,6 +202,85 @@
                     </div>
                     <div class="item__point">
                         <span>147</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal__content">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane1" type="button" role="tab" aria-controls="home-tab-pane1"
+                                aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane1" type="button" role="tab"
+                                aria-controls="profile-tab-pane1" aria-selected="false">Register</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane1" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <form action="" class="form">
+                                <div class="item">
+                                    <i class='bx bxl-gmail'></i>
+                                    <input name="email" type="text" placeholder="E-mail address">
+                                </div>
+                                <div class="item">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input name="password" type="password" placeholder="Password">
+                                </div>
+                                <button>Login</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane1" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <form action="" class="form">
+                                <div class="item">
+                                    <i class='bx bxl-gmail'></i>
+                                    <input name="email" type="text" placeholder="E-mail address">
+                                </div>
+                                <div class="item">
+                                    <i class='bx bx-user'></i>
+                                    <input name="username" type="text" placeholder="Username">
+                                </div>
+                                <div class="item">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input name="password" type="password" placeholder="Password">
+                                </div>
+                                <div class="item">
+                                    <i class='bx bxs-lock-alt'></i>
+                                    <input name="repeatPassword" type="password" placeholder="Repeat password">
+                                </div>
+                                <div class="item-checkbox">
+                                    <input type="checkbox" name="submit">
+                                    <label>
+                                        By signing-up, you are indicating that you have read and acknowledge the
+                                        <span>Terms of Service</span> and <span>Privacy Policy</span>.
+                                    </label>
+                                </div>
+                                <button>Sign-up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="login-gg">
+                        <button>
+                            <i class='bx bxl-google'></i>
+                            <span>Sign-In with Google</span>
+                        </button>
+
+                        <p>
+                            Please note: One account is allowed per user. Using a VPN, Proxy or Emulator software is
+                            prohibited and might result with account termianation without a notice.
+                        </p>
                     </div>
                 </div>
             </div>
